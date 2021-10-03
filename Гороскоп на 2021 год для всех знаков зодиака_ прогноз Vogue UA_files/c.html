@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://cdn.admixer.net/scripts3/c.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<body>
+<script>
+  (function () {
+    var AM_UID = "am-uid";
+    window.addEventListener("message", function (event) {
+      try {
+        var message = event.data;
+        var amUid = message[AM_UID];
+        if (amUid) {
+          localStorage.setItem(AM_UID, amUid);
+        }
+      } catch (e) {
+      }
+    });
+    var message = {};
+    try {
+      message[AM_UID] = localStorage.getItem(AM_UID);
+    } catch (e) {
+      message[AM_UID] = null;
+    }
+    finally {
+        window.parent.postMessage(message, "*");
+    }
+  })();
+</script>
+
+
+</body></html>
