@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: #000;
     height: 100%;
     overflow: hidden;
@@ -37,6 +37,10 @@ a:hover  {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.container.small {
+    max-width: 960px;
 }
 
 header {
@@ -95,6 +99,10 @@ header nav a {
 }
 
 main {
+    padding: 3rem 1rem;
+}
+
+main.horoscope-list {
     display: flex;
     box-sizing: border-box;
     flex: 0 1 auto;
@@ -102,22 +110,53 @@ main {
     flex-wrap: wrap;
 }
 
-main article {
+main.horoscope-list article {
     text-align: center;
     margin-bottom: 2rem;
     flex-basis: 25%;
     max-width: 25%;
 }
 
-main article img {
+main.horoscope-list article img {
     display: block;
     margin: 0 auto;
     width: 90%;
     height: auto;
 }
 
-main article h3 {
+main.horoscope-list article h3 {
     margin: 0 0 1rem;
+}
+
+main.horoscope-details {
+    text-align: center;
+}
+
+main.horoscope-details .title {
+    font-size: 3.125rem;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+}
+
+main.horoscope-details .date {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.25rem;
+}
+
+main.horoscope-details .text {
+    font-size: 1.0625rem;
+    line-height: 1.8125rem;
+}
+
+main.horoscope-details .text p {
+    margin: 0 0 1rem;
+}
+
+main.horoscope-details .text img {
+    display: block;
+    margin: 0 auto 1rem;
 }
 
 footer {
@@ -132,6 +171,7 @@ footer {
 }
 
 footer nav ul {
+    text-transform: uppercase;
     display: flex;
     justify-content: space-between;
 }
