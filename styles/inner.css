@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+main.horoscope-details .title {
+    font-size: 3.125rem;
+    line-height: 1.2;
+}
+
+main.horoscope-details .date {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main.horoscope-details .text {
+    font-size: 1.0625rem;
+    line-height: 1.8125rem;
+    text-align: justify;
+    overflow: hidden;
+}
+
+main.horoscope-details .align-center {
+    text-align: center;
+    margin: 0 0 1.25rem;
+}
+
+main.horoscope-details .align-left {
+    float: left;
+    margin: 0 1.25rem 1.25rem 0;
+}
+
+main.horoscope-details .align-right {
+    float: right;
+    margin: 0 0 1.25rem 1.25rem;
+}
+
+main.horoscope-details .text p {
+    margin: 0 0 1.25rem;
+}

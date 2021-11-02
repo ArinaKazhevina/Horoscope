@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    color: #000;
+    background: #fff;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: color .5s;
+}
+
+a:hover  {
+    color: #bb8f56;
+}
+
+.wrapper {
+    position: relative;
+    margin-top: 90px;
+}
+
+.wrapper main.container {
+    min-height: calc(100vh - 237px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container.small {
+    max-width: 960px;
+}
+
+header {
+  padding: 0 1rem;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1;
+  height: 90px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+header .logo a {
+  display: inline-block;
+  width: 80px;
+  margin-right: 1rem;
+}
+
+header .logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  text-transform: uppercase;
+}
+
+header nav li {
+  margin-left: 1rem;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+main {
+  padding: 3rem 1rem;
+}
+
+footer {
+    padding: 1rem;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+}
