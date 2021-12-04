@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:og="https://opengraphprotocol.org/schema/">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Гороскоп на 2022 год для всех знаков зодиака</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <meta name="author" content="Vogue.ua">
+    <meta name="google-site-verification" content="Bekhvqq-L3xwfTXGQQFxlewBA8qkpQFgO-HnPcrYgz4">
+    <meta name="keywords" content="Гороскоп 2022, гороскоп 2022 Овен, гороскоп 2022 Телец, гороскоп 2022 Близнецы, гороскоп 2022 Рак, гороскоп 2022 Лев, гороскоп 2022 Дева, гороскоп 2022 Скорпион, гороскоп 2022 Весы, гороскоп 2022 Стрелец, гороскоп 2022 Рыбы, гороскоп 2022 Козерог">
+    <meta name="description" content="Полный гороскоп для женщин и мужчин всех знаков зодиака 2022: что принесет год Быка, астрологический прогноз">
+    <link rel="canonical" href="https://vogue.ua/goroskop">
+    <link rel="image_src" href="https://vogue.ua/uploads/image/445/8a7/99d/fb1_5fd86e4fcd646_5fe999d8a7445.jpeg">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/common.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/inner.css">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body class="page">
+    <header>
+        <div>
+            <div class="logo">
+                <a href="index.html">
+                 <img src="images/logo.JPG"/>
+                </a>
+                <h1>Гороскоп 2022</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="compatibility.html">Совместимость</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="compatibility-details">
+        <article>
+            <div class="title-bar">
+                <a href="index.html" class="back-button"><i class="arrow left"></i> Назад</a>
+                <h2> Совместимость </h2>
+            </div>
+            <form action="#" class="compatibility-form">
+              <div class="column">
+                <select id="your_zodiac">
+                  <option value="">Твой знак зодиака</option>
+                  <option value="capricorn">Козерог</option>
+                  <option value="aquarius">Водолей</option>
+                  <option value="pisces">Рыбы</option>
+                  <option value="aries">Овен</option>
+                  <option value="taurus">Телец</option>
+                  <option value="gemini">Близнецы</option>
+                  <option value="cancer">Рак</option>
+                  <option value="leo">Лев</option>
+                  <option value="virgo">Дева</option>
+                  <option value="libra">Весы</option>
+                  <option value="scorpio">Скорпион</option>
+                  <option value="sagittarius">Стрелец</option>
+                </select>
+              </div>
+              <div class="column">
+                <select id="partner_zodiac">
+                  <option value="">Знак зодиака партнера</option>
+                  <option value="capricorn">Козерог</option>
+                  <option value="aquarius">Водолей</option>
+                  <option value="pisces">Рыбы</option>
+                  <option value="aries">Овен</option>
+                  <option value="taurus">Телец</option>
+                  <option value="gemini">Близнецы</option>
+                  <option value="cancer">Рак</option>
+                  <option value="leo">Лев</option>
+                  <option value="virgo">Дева</option>
+                  <option value="libra">Весы</option>
+                  <option value="scorpio">Скорпион</option>
+                  <option value="sagittarius">Стрелец</option>
+                </select>
+              </div>
+            </form>
+            <div class="compatibility-results">
+              <p id="placeholder">Выберите знаки зодиака...</p>
+              <p id="result">Ваша совместимость <span id="value">00</span> %</p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>АО "ГОРОСКОП", 2010-2021</li>
+                <li>Все права защищены</li>
+                <li>Разработка: Arina Kazhevina</li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+      var your_zodiac = document.getElementById("your_zodiac");
+      var partner_zodiac = document.getElementById("partner_zodiac");
+      var placeholder = document.getElementById("placeholder");
+      var result = document.getElementById("result");
+      var value_cell = document.getElementById("value");
+      var data = {
+        "aries":{"aries":"55","taurus":"85","gemini":"75","cancer":"40","leo":"100","virgo":"25","libra":"55","scorpio":"65","sagittarius":"100","capricorn":"10","aquarius":"80","pisces":"70"},
+        "taurus":{"aries":"85","taurus":"50","gemini":"20","cancer":"70","leo":"35","virgo":"85","libra":"50","scorpio":"90","sagittarius":"10","capricorn":"100","aquarius":"55","pisces":"75"},
+        "gemini":{"aries":"75","taurus":"20","gemini":"70","cancer":"60","leo":"100","virgo":"15","libra":"100","scorpio":"55","sagittarius":"45","capricorn":"30","aquarius":"90","pisces":"20"},
+        "cancer":{"aries":"40","taurus":"70","gemini":"60","cancer":"100","leo":"90","virgo":"45","libra":"25","scorpio":"75","sagittarius":"30","capricorn":"50","aquarius":"20","pisces":"100"},
+        "leo":{"aries":"100","taurus":"35","gemini":"100","cancer":"90","leo":"10","virgo":"85","libra":"100","scorpio":"40","sagittarius":"95","capricorn":"20","aquarius":"85","pisces":"50"},
+        "virgo":{"aries":"25","taurus":"85","gemini":"15","cancer":"45","leo":"85","virgo":"100","libra":"55","scorpio":"60","sagittarius":"45","capricorn":"80","aquarius":"50","pisces":"40"},
+        "libra":{"aries":"55","taurus":"50","gemini":"100","cancer":"25","leo":"100","virgo":"55","libra":"30","scorpio":"65","sagittarius":"75","capricorn":"25","aquarius":"100","pisces":"30"},
+        "scorpio":{"aries":"65","taurus":"90","gemini":"55","cancer":"75","leo":"40","virgo":"60","libra":"65","scorpio":"50","sagittarius":"25","capricorn":"95","aquarius":"35","pisces":"85"},
+        "sagittarius":{"aries":"100","taurus":"10","gemini":"45","cancer":"30","leo":"95","virgo":"45","libra":"75","scorpio":"25","sagittarius":"100","capricorn":"30","aquarius":"30","pisces":"40"},
+        "capricorn":{"aries":"10","taurus":"100","gemini":"30","cancer":"50","leo":"20","virgo":"80","libra":"25","scorpio":"95","sagittarius":"30","capricorn":"60","aquarius":"85","pisces":"95"},
+        "aquarius":{"aries":"80","taurus":"55","gemini":"90","cancer":"20","leo":"85","virgo":"50","libra":"100","scorpio":"35","sagittarius":"75","capricorn":"85","aquarius":"40","pisces":"75"},
+        "pisces":{"aries":"70","taurus":"75","gemini":"20","cancer":"100","leo":"50","virgo":"40","libra":"30","scorpio":"85","sagittarius":"40","capricorn":"95","aquarius":"75","pisces":"100"}
+      };
+      var showResults = function() {
+        var yourValue = your_zodiac.value;
+        var partnerValue = partner_zodiac.value;
+
+        if (!!yourValue && !!partnerValue) {
+          placeholder.style.display = 'none';
+          result.style.display = 'block';
+          value_cell.innerText = data[yourValue][partnerValue];
+        } else {
+          placeholder.style.display = 'block';
+          result.style.display = 'none';
+        }
+      };
+
+      your_zodiac.addEventListener("change", showResults);
+      partner_zodiac.addEventListener("change", showResults);
+  </script>
+</body>
+</html>

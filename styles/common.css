@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../fonts/OpenSansLight.ttf');
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -25,22 +30,10 @@ a:hover  {
     color: #bb8f56;
 }
 
-.wrapper {
+.page {
     position: relative;
-    margin-top: 90px;
-}
-
-.wrapper main.container {
-    min-height: calc(100vh - 237px);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.container.small {
-    max-width: 960px;
+    padding: 90px 0 50px;
+    min-height: calc(100vh - 140px);
 }
 
 header {
@@ -55,11 +48,13 @@ header {
   height: 90px;
 }
 
-header .container {
+header > div {
   display: flex;
   align-items: center;
   height: 100%;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header .logo {
@@ -100,13 +95,56 @@ header nav a {
 
 main {
   padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.arrow.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.arrow.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.arrow.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 footer {
-    padding: 1rem;
-    z-index: 1;
-    background-color: #fff;
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+}
+
+footer nav {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 footer nav ul {
